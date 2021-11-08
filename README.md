@@ -6,9 +6,9 @@ This is what it looks like:
 
 <img src="https://ksloan.github.io/blt/custom.png" width="400">
 
-You don't need to install _anything_ to use the .blt file format.
+It is possible to use the .blt file format without installing anything. Although...
 
-The VS Code extension provides syntax highlighting to make reading, writing, and skimming your files easier. The syntax highlighting works with a few [default themes](#default-themes), but can be [easily customized](#customize-recommended).
+This VS Code extension provides syntax highlighting to make reading, writing, and skimming your files easier. The syntax highlighting works with a few [default themes](#default-themes), but can be [easily customized](#customize-recommended).
 
 There are no rules to using .blt, but if you're interested, I've included [how I use it at work](#Recommended-Usage-for-Work).
 
