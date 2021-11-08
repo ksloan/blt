@@ -4,7 +4,7 @@
 
 This is what it looks like:
 
-<img src="/images/custom.png" width="400">
+<img src="https://ksloan.github.io/blt/custom.png" width="400">
 
 You don't need to install _anything_ to use the .blt file format.
 
@@ -16,7 +16,7 @@ There are no rules to using .blt, but if you're interested, I've included [how I
 
 ## More Complex Examples
 
-<img src="/images/complex.png" width="500">
+<img src="https://ksloan.github.io/blt/complex.png" width="500">
 
 ## Installation
 
@@ -52,15 +52,15 @@ Designed to work with existing VS Code themes (some work better than others).
 
 #### Dark +
 
-<img src="/images/dark+.png" width="300">
+<img src="https://ksloan.github.io/blt/dark+.png" width="300">
 
 #### Light +
 
-<img src="/images/light+.png" width="300">
+<img src="https://ksloan.github.io/blt/light+.png" width="300">
 
 #### Solarized
 
-<img src="/images/high-contrast.png" width="300">
+<img src="https://ksloan.github.io/blt/high-contrast.png" width="300">
 
 ## Known Issues
 
