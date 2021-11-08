@@ -1,0 +1,39 @@
+{
+  "name": "blt",
+  "displayName": "BLT Journal",
+  "description": "Bullet Journal inspired task management extension.",
+  "version": "0.0.1",
+  "publisher": "blt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksloan/blt.git"
+  },
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "blt",
+        "aliases": [
+          "blt",
+          "blt"
+        ],
+        "extensions": [
+          ".blt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "blt",
+        "scopeName": "source.blt",
+        "path": "./syntaxes/blt.tmLanguage"
+      }
+    ]
+  }
+}

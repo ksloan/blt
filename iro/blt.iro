@@ -1,0 +1,209 @@
+#################################################################
+## Iro
+################################################################ 
+## http://eeyo.io/iro
+################################################################
+
+########################################
+## Header
+########################################
+
+name                    = blt
+file_extensions []      = blt;
+
+
+########################################
+## Constants
+########################################
+
+__header       \= #
+__task         \= .
+__complete     \= x
+__pushed       \= ^
+__event        \= o
+__note         \= -
+__important    \= *
+__delegated    \= >
+__inspiration  \= !
+
+__name         \= @
+__tag          \= #
+__date         \= ~
+
+__inline_op \= [$${__name}$${__tag}$${__date}]
+
+########################################
+## Styles
+########################################
+
+styles[] {
+
+   // TASK TYPES
+   .header  : style {
+      color = blue
+      bold = true
+      textmate_scope = markup.heading task.header
+   }
+   .task  : style {
+      color = white
+      textmate_scope = entity.name.section task.default
+   }
+   .complete  : style {
+      color = black
+      textmate_scope = punctuation.definition.tag task.complete
+   }
+   .delegated  : style {
+      color = grey
+      textmate_scope = punctuation.definition.tag task.delegated
+   }
+   .pushed  : style {
+      color = brown
+      textmate_scope = string task.pushed
+   }
+   .important  : style {
+      color = red
+      textmate_scope = invalid.illegal task.important
+   }
+   .event  : style {
+      color = light_green
+      textmate_scope = variable task.event
+   }
+   .note  : style {
+      color = purple
+      textmate_scope = markup.italic task.note
+   }
+   .inspiration  : style {
+      color = pink
+      textmate_scope = entity.name.function task.inspiration
+   }
+
+   // INLINE TYPES
+   .tag : style {
+      color = yellow
+      textmate_scope = comment task.detail.tag
+   }
+   .name : style {
+      color = light_green
+      italic = true
+      textmate_scope = keyword.control.default task.detail.mention
+   }
+   .date : style {
+      color = light_blue
+      italic = true
+      textmate_scope = support.class.component task.detail.date
+   } 
+}
+
+########################################
+## Contexts
+########################################
+
+contexts[] {
+   main : context {
+      : inline_push {
+            regex         \= (^\s*\$${__header})
+            styles []      = .header;
+         : eol_pop {}
+         : include "inline_types";
+         : pattern {
+            regex      \= (.*?)(?=\s$${__inline_op}|$)
+            styles [] = .header;
+         }
+      }
+      : inline_push {
+             regex         \= (^\s*\$${__task})
+             styles []      = .task;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .task;
+          }
+      }
+      : inline_push {
+            // Note: this operator is not escaped!
+             regex         \= (^\s*$${__complete})
+             styles []      = .complete;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .complete;
+          }
+      }
+      : inline_push {
+             regex         \= (^\s*\$${__pushed})
+             styles []      = .pushed;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .pushed;
+          }
+      }
+      : inline_push {
+             regex         \= (^\s*\$${__event})
+             styles []      = .event;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .event;
+          }
+      }
+      : inline_push {
+             regex         \= (^\s*\$${__note})
+             styles []      = .note;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .note;
+          }
+      }
+      : inline_push {
+             regex         \= (^\s*\$${__important})
+             styles []      = .important;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .important;
+          }
+      }
+      : inline_push {
+         regex         \= (^\s*\$${__delegated})
+         styles []      = .delegated;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .delegated;
+          }
+      }
+      : inline_push {
+             regex         \= (^\s*\$${__inspiration})
+             styles []      = .inspiration;
+          : eol_pop {}
+          : include "inline_types";
+          : pattern {
+             regex      \= (.*?)(?=\s$${__inline_op}|$)
+             styles [] = .inspiration;
+          }
+      }
+   }
+   inline_types: context {
+      : pattern {
+         regex   \= (\s$${__name}\S*)
+         styles[] = .name;
+      }
+      : pattern {
+         regex   \= (\s$${__date}\S*)
+         styles[] = .date;
+      }
+      : pattern {
+         regex   \= (\s$${__tag}\S*)
+         styles[] = .tag;
+      }
+   }
+}

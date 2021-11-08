@@ -1,0 +1,78 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "task.header.blt",
+        "settings": {
+          "foreground": "#3498db"
+        }
+      },
+      {
+        "scope": "task.default.blt",
+        "settings": {
+          "foreground": "#ecf0f1"
+        }
+      },
+      {
+        "scope": "task.complete.blt",
+        "settings": {
+          "foreground": "#2c3e50"
+        }
+      },
+      {
+        "scope": "task.delegated.blt",
+        "settings": {
+          "foreground": "#34495e"
+        }
+      },
+      {
+        "scope": "task.pushed.blt",
+        "settings": {
+          "foreground": "#7f8c8d"
+        }
+      },
+      {
+        "scope": "task.important.blt",
+        "settings": {
+          "foreground": "#c0392b"
+        }
+      },
+      {
+        "scope": "task.event.blt",
+        "settings": {
+          "foreground": "#16a085"
+        }
+      },
+      {
+        "scope": "task.note.blt",
+        "settings": {
+          "foreground": "#bdc3c7"
+        }
+      },
+      {
+        "scope": "task.inspiration.blt",
+        "settings": {
+          "foreground": "#fdcb6e"
+        }
+      },
+      {
+        "scope": "task.detail.tag.blt",
+        "settings": {
+          "foreground": "#f1c40f"
+        }
+      },
+      {
+        "scope": "task.detail.mention.blt",
+        "settings": {
+          "foreground": "#9b59b6"
+        }
+      },
+      {
+        "scope": "task.detail.date.blt",
+        "settings": {
+          "foreground": "#e84393"
+        }
+      }
+    ]
+  }
+}

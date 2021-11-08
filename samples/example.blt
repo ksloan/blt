@@ -1,0 +1,61 @@
+# Header
+
+. a task with details
+o time bound task, or event ~date
+* important task
+x completed task
+> delegated task @name 
+^ task pushed off for later
+! inspirational note #tag
+- just a note
+
+# Minimal Start
+
+. you can start with just unfinished
+x and finished tasks
+
+# Other task types
+
+> start delegating tasks
+^ push them off for later
+o identify tasks with a hard deadline
+
+# Take Notes
+
+- notes
+! inspirations
+
+# Add Details
+
+. a task with a ~date
+. a task with a #tag
+. a task with a @name
+
+# More Complex
+
+> multiple delegates @name @name with details after
+o an event: with reminder ~friday
+* important event with a ~date
+^ pushed off, revisit in ~oct #tag @name
+. task with a url @ https://github.com/ksloan/blt
+. multi-line details: with details #this
+    - extended details #that
+    - even more ~211001
+. task
+    . with subtasks #nice
+        ! why not go deeper?
+    > one already delegated
+
+# Tests
+
+random text shouldn't format
+-note not formatted correctly
+o mid - line >note < and o other ! things
+. task multiple details @name #tag #tag2 @name
+! ^ o : > ! @ # #test
+* important task @name text after
+* should not highlight emails this@name.com
+! important task #tag after
+! should not highlight emails not#tag
+^ important task ~date text after
+^ should not highlight emails not~date
