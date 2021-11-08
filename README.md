@@ -8,7 +8,7 @@ This is what it looks like:
 
 You don't need to install _anything_ to use the .blt file format.
 
-The VS Code extension provides syntax highlighting to make reading, writing, and skimming your files easier. The syntax highlighting works with a few [default themes](#themes), but can be [easily customized](#customize-recommended).
+The VS Code extension provides syntax highlighting to make reading, writing, and skimming your files easier. The syntax highlighting works with a few [default themes](#default-themes), but can be [easily customized](#customize-recommended).
 
 There are no rules to using .blt, but if you're interested, I've included [how I use it at work](#Recommended-Usage-for-Work).
 
@@ -58,7 +58,7 @@ Designed to work with existing VS Code themes (some work better than others).
 
 <img src="https://ksloan.github.io/blt/light+.png" width="300">
 
-#### Solarized
+#### High Contrast
 
 <img src="https://ksloan.github.io/blt/high-contrast.png" width="300">
 
