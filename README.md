@@ -20,7 +20,7 @@ There are no rules to using .blt, but if you're interested, I've included [how I
 
 ## Installation
 
-Right now the .blt extension is still in bet.
+Right now the .blt extension is still in development.
 
 To install, first download the latest `blt-#.#.#.vsix` bundle from [the release list](https://github.com/ksloan/blt/releases) and, then add it to vscode using one of these two methods:
 
