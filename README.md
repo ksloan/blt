@@ -20,9 +20,9 @@ There are no rules to using .blt, but if you're interested, I've included [how I
 
 ## Installation
 
-Right now the .blt extension is still in beta, and unpublished.
+Right now the .blt extension is still in bet.
 
-To install, first download the `blt.vsix` bundle from []() and, then add it to vscode using one of these two methods:
+To install, first download the latest `blt-#.#.#.vsix` bundle from [the release list](https://github.com/ksloan/blt/releases) and, then add it to vscode using one of these two methods:
 
 1. From the command line: `code --install-extension /path/to/blt.vsix`
 2. From VS Code GUI: Go to the extensions tab in VS Code, click the ellipsis in the top bar ("..."), and click "Install from VSIX".
