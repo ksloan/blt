@@ -14,9 +14,9 @@ There are no rules to using .blt, but if you're interested, I've included [how I
 
 .blt is most powerful when used alongside [whaatch](https://github.com/ksloan/whaatch) and [git lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) to maintain to-the-second traceability.
 
-## More Complex Examples
+## Features
 
-<img src="https://ksloan.github.io/blt/complex.png" width="500">
+<img src="https://ksloan.github.io/blt/learn.png" width="500">
 
 ## Installation
 
@@ -28,6 +28,8 @@ To install, first download the latest `blt-#.#.#.vsix` bundle from [the release 
 2. From VS Code GUI: Go to the extensions tab in VS Code, click the ellipsis in the top bar ("..."), and click "Install from VSIX".
 
 Please report any issues to this GitHub repo.
+
+
 
 ## Theming
 
@@ -54,13 +56,19 @@ Designed to work with existing VS Code themes (some work better than others).
 
 <img src="https://ksloan.github.io/blt/dark+.png" width="300">
 
-#### Light +
+#### Solarized
 
-<img src="https://ksloan.github.io/blt/light+.png" width="300">
+<img src="https://ksloan.github.io/blt/solarized.png" width="300">
 
 #### High Contrast
 
 <img src="https://ksloan.github.io/blt/high-contrast.png" width="300">
+
+#### Light +
+
+<img src="https://ksloan.github.io/blt/light+.png" width="300">
+
+
 
 ## Known Issues
 
