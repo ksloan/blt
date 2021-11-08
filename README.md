@@ -20,7 +20,7 @@ There are no rules to using .blt, but if you're interested, I've included [how I
 
 ## Installation
 
-Right now the .blt extension is still in development.
+Right now the .blt extension is not on the VS Code extension marketplace.
 
 To install, first download the latest `blt-#.#.#.vsix` bundle from [the release list](https://github.com/ksloan/blt/releases) and, then add it to vscode using one of these two methods:
 
@@ -29,7 +29,7 @@ To install, first download the latest `blt-#.#.#.vsix` bundle from [the release 
 
 Please report any issues to this GitHub repo.
 
-
+To package your own .vsix and install from source see [Contributing](#contributing).
 
 ## Theming
 
@@ -80,6 +80,14 @@ Designed to work with existing VS Code themes (some work better than others).
 The tmLanguage file is generated via https://eeyo.io/iro (see [the .iro file](/iro/blt.iro)] which allows us to compile for various other editors in the future!
 
 Tip for debugging in VSCode: Trigger the scope inspector from the Command Palette with the `Developer: Inspect Editor Tokens and Scopes`.
+
+To create a vsix package yourself:
+
+```
+npm install -g vsce
+cd /path/to/blt
+vsce package
+```
 
 # Recommended Usage for Work
 
