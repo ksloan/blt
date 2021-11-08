@@ -127,7 +127,7 @@ o prepare for presentation ~friday
 
 ### Meetings
 
-There are two generally types of meetings (`recurring`, or one-off `meetings`).
+There are generally two types of meetings (`recurring`, or one-off `meetings`).
 
 For both types, I open the meeting file and jot down items that come up (tasks, inspiration, notes, delegations etc...). After the meeting I'll review and decide if any action items need to be moved from this file to my main LOG.blt file, or somewhere else.
 
