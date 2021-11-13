@@ -28,7 +28,7 @@
       <array> 
         <dict>
           <key>begin</key>
-          <string>(^\s*\#)</string>
+          <string>(^\s*\#\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -57,7 +57,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*\.)</string>
+          <string>(^\s*\.\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -86,7 +86,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*x)</string>
+          <string>(^\s*x\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -115,7 +115,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*\^)</string>
+          <string>(^\s*\^\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -144,7 +144,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*\o)</string>
+          <string>(^\s*\o\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -173,7 +173,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*\-)</string>
+          <string>(^\s*\-\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -202,7 +202,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*\*)</string>
+          <string>(^\s*\*\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -231,7 +231,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*\&gt;)</string>
+          <string>(^\s*\&gt;\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -260,7 +260,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(^\s*\!)</string>
+          <string>(^\s*\!\s)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -323,7 +323,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>markup.heading task.header.blt</string>
         </dict>
@@ -339,7 +339,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>entity.name.section task.default.blt</string>
         </dict>
@@ -355,7 +355,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>punctuation.definition.tag task.complete.blt</string>
         </dict>
@@ -371,7 +371,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>string task.pushed.blt</string>
         </dict>
@@ -387,7 +387,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>variable task.event.blt</string>
         </dict>
@@ -403,7 +403,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>markup.italic task.note.blt</string>
         </dict>
@@ -419,7 +419,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>invalid.illegal task.important.blt</string>
         </dict>
@@ -435,7 +435,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>punctuation.definition.tag task.delegated.blt</string>
         </dict>
@@ -451,7 +451,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]|$)</string>
+          <string>(.*?)(?=\s[\x{0040}\x{0023}\x{007e}]\S|$)</string>
           <key>name</key>
           <string>entity.name.function task.inspiration.blt</string>
         </dict>

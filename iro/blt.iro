@@ -30,7 +30,7 @@ __name         \= @
 __tag          \= #
 __date         \= ~
 
-__inline_op \= [$${__name}$${__tag}$${__date}]
+__inline_op \= [$${__name}$${__tag}$${__date}]\S
 
 ########################################
 ## Styles
@@ -101,7 +101,7 @@ styles[] {
 contexts[] {
    main : context {
       : inline_push {
-            regex         \= (^\s*\$${__header})
+            regex         \= (^\s*\$${__header}\s)
             styles []      = .header;
          : eol_pop {}
          : include "inline_types";
@@ -111,7 +111,7 @@ contexts[] {
          }
       }
       : inline_push {
-             regex         \= (^\s*\$${__task})
+             regex         \= (^\s*\$${__task}\s)
              styles []      = .task;
           : eol_pop {}
           : include "inline_types";
@@ -122,7 +122,7 @@ contexts[] {
       }
       : inline_push {
             // Note: this operator is not escaped!
-             regex         \= (^\s*$${__complete})
+             regex         \= (^\s*$${__complete}\s)
              styles []      = .complete;
           : eol_pop {}
           : include "inline_types";
@@ -132,7 +132,7 @@ contexts[] {
           }
       }
       : inline_push {
-             regex         \= (^\s*\$${__pushed})
+             regex         \= (^\s*\$${__pushed}\s)
              styles []      = .pushed;
           : eol_pop {}
           : include "inline_types";
@@ -142,7 +142,7 @@ contexts[] {
           }
       }
       : inline_push {
-             regex         \= (^\s*\$${__event})
+             regex         \= (^\s*\$${__event}\s)
              styles []      = .event;
           : eol_pop {}
           : include "inline_types";
@@ -152,7 +152,7 @@ contexts[] {
           }
       }
       : inline_push {
-             regex         \= (^\s*\$${__note})
+             regex         \= (^\s*\$${__note}\s)
              styles []      = .note;
           : eol_pop {}
           : include "inline_types";
@@ -162,7 +162,7 @@ contexts[] {
           }
       }
       : inline_push {
-             regex         \= (^\s*\$${__important})
+             regex         \= (^\s*\$${__important}\s)
              styles []      = .important;
           : eol_pop {}
           : include "inline_types";
@@ -172,7 +172,7 @@ contexts[] {
           }
       }
       : inline_push {
-         regex         \= (^\s*\$${__delegated})
+         regex         \= (^\s*\$${__delegated}\s)
          styles []      = .delegated;
           : eol_pop {}
           : include "inline_types";
@@ -182,7 +182,7 @@ contexts[] {
           }
       }
       : inline_push {
-             regex         \= (^\s*\$${__inspiration})
+             regex         \= (^\s*\$${__inspiration}\s)
              styles []      = .inspiration;
           : eol_pop {}
           : include "inline_types";

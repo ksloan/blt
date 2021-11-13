@@ -59,3 +59,5 @@ o mid - line >note < and o other ! things
 ! should not highlight emails not#tag
 ^ important task ~date text after
 ^ should not highlight emails not~date
+osome regular text that starts with an operator
+- alone operator # shouldn't trigger
