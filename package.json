@@ -1,8 +1,8 @@
 {
   "name": "blt",
-  "displayName": "BLT Journal",
+  "displayName": ".blt",
   "description": "Bullet Journal inspired task management extension.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "blt",
   "icon": "images/icon.png",
   "repository": {
@@ -38,6 +38,6 @@
     ]
   },
   "galleryBanner": {
-    "color": "#3498db"
+    "color": "#141414"
   }
 }
