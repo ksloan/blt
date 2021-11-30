@@ -2,8 +2,9 @@
   "name": "blt",
   "displayName": "BLT Journal",
   "description": "Bullet Journal inspired task management extension.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "blt",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ksloan/blt.git"
