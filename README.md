@@ -8,7 +8,7 @@ This is what it looks like:
 
 It is possible to use the .blt file format without installing anything. Although...
 
-This VS Code extension provides syntax highlighting to make reading, writing, and skimming your files easier. The syntax highlighting works with a few [default themes](#default-themes), but can be [easily customized](#customize-recommended).
+This [VS Code extension](https://marketplace.visualstudio.com/items?itemName=blt.blt) provides syntax highlighting to make reading, writing, and skimming your files easier. The syntax highlighting works with a few [default themes](#default-themes), but can be [easily customized](#customize-recommended).
 
 There are no rules to using .blt, but if you're interested, I've included [how I use it at work](#Recommended-Usage-for-Work).
 
@@ -20,14 +20,13 @@ There are no rules to using .blt, but if you're interested, I've included [how I
 
 ## Installation
 
-Right now the .blt extension is not on the VS Code extension marketplace.
+Install directly through VS Code by going to the extension tab and searching for ".blt". 
 
-To install, first download the latest `blt-#.#.#.vsix` bundle from [the release list](https://github.com/ksloan/blt/releases) and, then add it to vscode using one of these two methods:
+<img src="https://ksloan.github.io/blt/install.png" width="500">
 
-1. From the command line: `code --install-extension /path/to/blt.vsix`
-2. From VS Code GUI: Go to the extensions tab in VS Code, click the ellipsis in the top bar ("..."), and click "Install from VSIX".
+Make sure you also take the time to create a [custom color theme](#customize-recommended) for the best experience.
 
-Please report any issues to this GitHub repo.
+You can find the .blt extension [on the VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=blt.blt).
 
 To package your own .vsix and install from source see [Contributing](#contributing).
 
@@ -88,6 +87,12 @@ npm install -g vsce
 cd /path/to/blt
 vsce package
 ```
+
+then add it to vscode using one of these two methods:
+
+1. From the command line: `code --install-extension /path/to/blt.vsix`
+2. From VS Code GUI: Go to the extensions tab in VS Code, click the ellipsis in the top bar ("..."), and click "Install from VSIX".
+
 
 # Recommended Usage for Work
 
