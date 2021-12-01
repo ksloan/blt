@@ -36,8 +36,5 @@
         "path": "./syntaxes/blt.tmLanguage"
       }
     ]
-  },
-  "galleryBanner": {
-    "color": "#141414"
   }
 }
