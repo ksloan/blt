@@ -2,7 +2,7 @@
   "name": "blt",
   "displayName": ".blt",
   "description": "Bullet Journal inspired task management extension.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "blt",
   "icon": "images/icon.png",
   "repository": {
